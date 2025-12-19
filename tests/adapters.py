@@ -2,11 +2,11 @@ from __future__ import annotations
 
 import os
 from typing import Any
-
+from cs336_data.extract_text import extracts_text_from_byte_string
 
 
 def run_extract_text_from_html_bytes(html_bytes: bytes) -> str | None:
-    raise NotImplementedError
+    return extracts_text_from_byte_string(html_bytes)
 
 
 def run_identify_language(text: str) -> tuple[Any, float]:
